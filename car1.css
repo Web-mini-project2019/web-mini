@@ -1,0 +1,61 @@
+#car-name{
+    font-family: "Times New Roman";
+ font-size: 55px;
+    
+}
+#loclogo-img{
+width: 40px;
+}
+#car-content,#sharelogo {
+    padding-left: 270px;
+}
+#car-loc{
+    font-size: 30px;
+}
+#carimage{
+    width: 530px;
+height: 350px;
+}
+#shareimg{
+    width: 90px;
+    height: 55px;
+    padding: 5px;
+    padding-right: px;
+}
+#review{
+    color: #0a0a0a;
+    font-size: 17px;
+}
+#car-book{
+    padding: 170px;
+
+
+    font-family: "Times New Roman";
+
+}
+#car-book .tr {
+    width: 100px;
+}
+#book{
+    margin: 10px;
+    font-size: 23px;
+    padding-left: 0px;
+}
+#car-book td p{
+    width: 200px;
+    color: #0a0a0a;
+    font-size: 20px;
+    padding-right: 40px;
+    margin-right: 60px;
+
+}
+td input{
+    width: 190px;
+    height: 35px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+}
+#book-button{
+    padding-left: 80px;
+}

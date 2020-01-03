@@ -1,0 +1,98 @@
+body{
+    background-color: #E5EBF2;
+}
+.maindiv{
+    display:flex;
+}
+.right {
+    border-radius: 6px ;
+    /* border-color:#428BCA;//code not working of border color
+    border:6px; */
+
+}
+.right select{
+    border-radius: 4px ;
+    height:35px;
+    width: 300px;
+    margin-left:30px;
+    color:rgb(7, 7, 104);
+}
+.right input:not(.radio){
+    border-radius: 4px ;
+    height:30px;
+    width: 300px;
+    margin-left:30px;
+
+
+}
+.texts{
+    margin-left:30px;
+}
+.right1 select{
+    border-radius: 4px ;
+    height:35px;
+    width: 300px;
+    margin-left:30px;
+    color:rgb(7, 7, 104);
+}
+.right1 input:not(.radio){
+    border-radius: 4px ;
+    height:30px;
+    width: 300px;
+    margin-left:30px;
+}
+.right1{
+    margin-left: 25px;
+    border-radius: 6px;
+
+}
+.end{
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    height: 250px;width: 1024px;
+    margin-left:280px;
+    margin-top:-300px;
+}
+.end  h4,#in{
+    margin-left:8px;
+
+
+}
+.random{
+    border-radius: 4px;
+    height:30px;
+    margin-left:8px;
+}
+.random1{
+    border-radius: 4px;
+    height:30px;
+    margin-left:30px;
+}
+.register {
+    border-radius: 6px ;
+    /* border-color:#428BCA;//code not working of border color
+    border:6px; */
+
+}
+.register select{
+    border-radius: 4px ;
+    height:35px;
+    width: 300px;
+    margin-left:80px;
+    color:rgb(7, 7, 104);
+}
+.register input:not(.radio){
+    border-radius: 4px ;
+    height:30px;
+    width: 300px;
+    margin-left:80px;
+
+
+
+}
+.texts{
+    margin-left:80px;
+}
+body{
+    background:white;
+}

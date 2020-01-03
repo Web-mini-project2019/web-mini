@@ -1,0 +1,1025 @@
+
+<!DOCTYPE html>
+<html>
+<!--
+Product:        PHPTRAVELS
+Copyright:      2012 - 2020 @ phptravels.com
+License:        https://phptravels.com/terms-and-conditions/
+Purchase:       https://phptravels.com/order
+Demo:           https://phptravels.com/demo
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="PHPTRAVELS">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css"/><base href="https://www.phptravels.net/" />
+    <script>var base_url = 'https://www.phptravels.net/'; </script>
+    <script src="https://www.phptravels.net/assets/include/pace/pace.min.js"></script>
+    <link href="https://www.phptravels.net/assets/include/pace/dataurl.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://www.phptravels.net/uploads/global/favicon.png">
+    <link href="https://www.phptravels.net/assets/include/loading/loading.css" rel="stylesheet">
+    <link href="https://www.phptravels.net/assets/css/style.css" rel="stylesheet">
+    <link href="https://www.phptravels.net/assets/css/admin.css" rel="stylesheet">
+    <link href="https://www.phptravels.net/assets/css/fa.min.css" rel="stylesheet">
+    <link href="https://www.phptravels.net/assets/css/animate.min.css" rel="stylesheet">
+    <script src="https://www.phptravels.net/assets/include/ckeditor/ckeditor.js"></script>    <script src="https://www.phptravels.net/assets/js/jquery-1.11.2.js"></script>
+    <link href="https://www.phptravels.net/assets/include/alert/css/alert.css" rel="stylesheet" />
+    <link href="https://www.phptravels.net/assets/include/alert/themes/default/theme.css" rel="stylesheet" />
+    <script src="https://www.phptravels.net/assets/include/alert/js/alert.js"></script>
+    <script src="https://www.phptravels.net/assets/include/jquery-form/jquery.form.min.js"></script>
+    <!--[if lte IE 8]>
+    <script src="https://www.phptravels.net/assets/js/html5shiv.js"></script>
+    <script src="https://www.phptravels.net/assets/js/respond.min.js"></script>
+    <script src="https://www.phptravels.net/assets/js/excanvas.min.js"></script>
+    <![endif]-->
+    <link href="https://www.phptravels.net/assets/include/select2/select2.css" rel="stylesheet">
+    <link href="https://www.phptravels.net/assets/include/select2/select2-default.css" rel="stylesheet">
+    <script src="https://www.phptravels.net/assets/include/select2/select2.min.js"></script>
+    <style>.wrapper .main { margin-top: 55px; } @media screen and (max-width: 480px) { .wrapper .main { margin-top: 100px; } }</style>
+    <script src="https://www.phptravels.net/assets/js/bootstrap.min.js"></script>
+    <script src="https://www.phptravels.net/assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="https://www.phptravels.net/assets/js/panels.js"></script>
+    <script src="https://www.phptravels.net/assets/include/highcharts/highcharts.js"></script>
+
+    <style>
+        body{background:#efefef}.header{display:none}.footer{display:none}.gotop{display:none}.navbar-btn{box-shadow:none;outline:none!important;border:0}.line{width:100%;height:1px;border-bottom:1px dashed #ddd;margin:40px 0}.wrapper{display:flex;align-items:stretch}#sidebar{min-width:250px;max-width:250px;background-color:#32363C;box-shadow:0 0 10px 0 rgba(0,0,0,.2);color:#fff;transition:all .3s;position:fixed;height:100%;z-index:1100;overflow-y:scroll;height:100vh}#sidebar a,#sidebar a:hover,#sidebar a:focus{color:inherit}#sidebar.active{margin-left:-300px}#sidebar .sidebar-header{padding:20px}#sidebar ul.components{padding:5px 0;border-bottom:1px solid rgba(238,238,238,.18)}#sidebar ul p{color:#fff;padding:10px}#sidebar ul li a{position:relative;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;padding:6px;font-size:13px;display:block;text-transform:uppercase;text-decoration:none;padding-left:60px!important}#sidebar ul li a:hover{color:#b5b9d2;background:rgba(0,0,0,.04)}#sidebar ul li.active>a,a[aria-expanded="true"]{color:#666;background:rgba(0,0,0,.04)}#sidebar a[data-toggle="collapse"]{position:relative}#sidebar a[aria-expanded="false"]::before,#sidebar a[aria-expanded="true"]::before{content:'\e259';display:block;position:absolute;right:20px;font-family:'Glyphicons Halflings';font-size:.9em}#sidebar a[aria-expanded="true"]::before{content:'\e260'}#sidebar ul ul a{font-size:.9em!important;padding-left:60px!important;background:rgba(245,245,245,.04);font-weight:100}#sidebar a{font-weight:700}#sidebar i{margin-top:4px;color:rgba(154,154,175,.7411764705882353);position:absolute;left:20px;font-size:18px}ul.CTAs{padding:14px}ul.CTAs a{text-align:center!important;font-size:.9em!important;display:block;border-radius:3px;text-align:center;padding-left:15px!important}a.download{background:#fff;color:#7386d5}a.article{background:#0031bc!important;color:#fff!important;border:2px solid #0031bc}a.article:hover{background:#fff!important;color:#0031bc!important;border:2px solid #0031bc}#content{padding:20px;min-height:100vh;width:100%;transition:all .3s}@media(max-width:768px){#sidebar{margin-left:-300px}#sidebar.active{margin-left:0}#sidebarCollapse span{display:none}#content{padding:20px!important}.navbar .container-fluid{padding:0 15px 15px 0!important}}.navbar-default{height:64px;color:rgba(0,0,0,.87);box-shadow:0 3px 14px 2px rgba(0,0,0,.12)}.navbar-brand{background:#eee;color:rgba(0,0,0,.87);height:64px;min-width:64px!important;padding:18px}.navbar-nav>li>a{padding-top:22px;padding-bottom:22px}.root{background:#292c30;padding:35px 0}.root i{position:absolute;font-size:32px!important;top:88px;background:rgba(0,0,0,.25882352941176473);padding:17px;border-radius:42px;width:66px;color:#fff!important;text-align:center;margin-left:0}.root strong{text-transform:uppercase;letter-spacing:1px;position:relative;margin-bottom:0;display:block;font-size:14px}.root p{margin-left:90px;margin-top:-5px;position:relative;margin-bottom:0;font-weight:100;font-size:10px}.root a{text-decoration:none}.root:hover{background:#0031bc;color:#fff}.go_left{padding:0 15px 15px 0!important;transition:all .3s}.p15{padding:20px!important}#content{padding-left:270px}.liline li{border-bottom:1px solid #e5e5e5}.dropdown .badge{background-color:#ffae1a}.dropdown .hides{font-size:9px;letter-spacing:1px}a{overflow:hidden}.btn{text-transform:uppercase;letter-spacing:0;overflow:hidden;position:relative;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease;z-index:0}.ink{display:block;position:absolute;background:rgba(255,255,255,.3);border-radius:100%;-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0)}.animate{-webkit-animation:ripple 0.65s linear;-moz-animation:ripple 0.65s linear;-ms-animation:ripple 0.65s linear;-o-animation:ripple 0.65s linear;animation:ripple 0.65s linear}@-webkit-keyframes ripple{100%{opacity:0;-webkit-transform:scale(2.5)}}@-moz-keyframes ripple{100%{opacity:0;-moz-transform:scale(2.5)}}@-o-keyframes ripple{100%{opacity:0;-o-transform:scale(2.5)}}@keyframes ripple{100%{opacity:0;transform:scale(2.5)}}
+    </style>
+
+    <script>
+        (function($){jQuery.expr[':'].Contains=function(a,i,m){return(a.textContent||a.innerText||"").toUpperCase().indexOf(m[3].toUpperCase())>=0};function FilterMenu(list){var input=$(".filtertxt");$(input).change(function(){var filter=$(this).val();if(filter){$(list).parent().addClass('open');$(list).addClass('in').prop('aria-expanded','true').slideDown();$(list).find('li:Contains('+filter+')').addClass('active');$(list).find('li:not(:Contains('+filter+'))').removeClass('active');$(list).find('li:Contains('+filter+')').show();$(list).find('li:not(:Contains('+filter+'))').hide();$('#social-sidebar-menu').find('li:Contains('+filter+')').show();$('#social-sidebar-menu').find('li:not(:Contains('+filter+'))').hide()}else{$(list).parent().removeClass('open');$(list).removeClass('in').prop('aria-expanded','false').slideUp();$(list).find('li').removeClass('active');$('#social-sidebar-menu').find('li').show()}}).keyup(function(){$(this).change()})}
+            $(function(){FilterMenu($("#social-sidebar-menu ul"))})}(jQuery))
+    </script>
+
+    <script>
+        /* Ripple Effect */
+        $(function(){var ink,d,x,y;$("a, button,.ripple").click(function(e){if($(this).find(".ink").length===0){$(this).prepend("<span class='ink'></span>")}
+            ink=$(this).find(".ink");ink.removeClass("animate");if(!ink.height()&&!ink.width()){d=Math.max($(this).outerWidth(),$(this).outerHeight());ink.css({height:d,width:d})}
+            x=e.pageX-$(this).offset().left-ink.width()/2;y=e.pageY-$(this).offset().top-ink.height()/2;ink.css({top:y+'px',left:x+'px'}).addClass("animate")})});
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <img style="float: left; margin-right: 10px; max-width: 33px;" src="https://www.phptravels.net/uploads/global/favicon.png" class="hlogo_preview_img img-fluid brand-logos favicon">
+            <h5>Administrator
+                <small class="muted" style="color:#9d9d9d">Console</small>
+            </h5>
+        </div>
+        <div class="root">
+            <a href="https://www.phptravels.net/admin/profile/">
+                <i class="fa fa-user-circle-o pull-left" style="left:5px"></i>
+                <p><strong>Super Admin</strong> Current User</p>
+            </a>
+        </div>
+        <div class="social-sidebar">
+            <!--<div class="search-sidebar">
+                <form class="search-sidebar-form has-icon filterform" onsubmit="return false;">
+                        <label for="sidebar-query" class="fa fa-search"></label>
+                        <input id="sidebar-query" type="text" placeholder="Search" class="form-control search-query filtertxt">
+                </form>
+                </div>-->
+            <ul id="social-sidebar-menu" class="list-unstyled components">
+                <li><a style="color:#F5F8FF" href="https://www.phptravels.net/admin"><i style="color:#F5F8FF" class="fa fa-desktop"></i>  Dashboard</a></li>
+                <li>
+                    <a href="https://www.phptravels.net/admin/updates/"><i class="fa fa-refresh"></i>
+                        <span>Updates</span><span class="pull-right label label-danger" id="updatescount"></span>
+                    </a>
+                </li>
+                <li> <a href="https://www.phptravels.net/admin/settings/modules/"><i class="fa fa-cube"></i> Modules</a></li>
+                <li>
+                    <a href="#menu-ui" data-toggle="collapse" aria-expanded="false"><i class="fa fa-cog"></i> General</a>
+                    <ul id="menu-ui" class="collapse wow fadeIn animated list-unstyled">
+                        <li> <a href="https://www.phptravels.net/admin/settings/">Settings</a> </li>
+                        <li> <a href="https://www.phptravels.net/admin/settings/currencies/">Currencies</a> </li>
+                        <li> <a href="https://www.phptravels.net/admin/settings/paymentgateways/">Payment Gateways</a></li>
+                        <li> <a href="https://www.phptravels.net/admin/settings/social/">Social Connections</a></li>
+                        <li> <a href="https://www.phptravels.net/admin/settings/widgets/">Widgets</a></li>
+                        <li> <a href="https://www.phptravels.net/admin/settings/sliders/">Sliders</a></li>
+                        <li> <a href="https://www.phptravels.net/admin/templates/email/">Email Templates</a></li>
+                        <li> <a href="https://www.phptravels.net/admin/templates/sms_settings/">SMS API Settings</a></li>
+                        <li> <a href="https://www.phptravels.net/admin/backup/">BackUp</a></li>
+                        <!--                    <li><a href="https://www.phptravels.net/admin/locations"><i class="fa fa-map-marker w30"></i> Locations<span class="pull-right label label-danger"></span></a></li>
+                    -->
+                    </ul>
+                </li>
+                <li>
+                    <a data-toggle="collapse"  aria-expanded="false" href="#ACCOUNTS"><i class="fa fa-user-circle"></i> Accounts                </a>
+                    <ul id="ACCOUNTS" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/accounts/admins/">Admins</a></li>
+                        <li><a href="https://www.phptravels.net/admin/accounts/suppliers/">Suppliers</a></li>
+                        <li><a href="https://www.phptravels.net/admin/accounts/customers/">Customers</a></li>
+                        <li><a href="https://www.phptravels.net/admin/accounts/guest/">GuestCustomers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#CMS" data-toggle="collapse" aria-expanded="false"><i style="width:30px" class="fa fa-list-alt w30"></i><span>CMS</span></a>
+                    <ul id="CMS" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/cms">Pages</a></li>
+                        <!-- <li><a href="https://www.phptravels.net/admin/cms/menus/manage">Menu</a></li> -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#TravelhopeHotels" data-toggle="collapse" aria-expanded="false"><i class="w30 fa fa-hotel"></i>Travelhope Hotels</a>
+                    <ul id="TravelhopeHotels" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/thhotels/bookings">Bookings</a></li>
+                        <li><a href="https://www.phptravels.net/admin/thhotels/settings">Settings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#TravelhopeFlights" data-toggle="collapse" aria-expanded="false"><i class="w30 fa fa-plane"></i>Travelhope Flights</a>
+                    <ul id="TravelhopeFlights" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/thflight/bookings">Bookings</a></li>
+                        <li><a href="https://www.phptravels.net/admin/thflight/settings">Settings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Tours" data-toggle="collapse" aria-expanded="false"><i class="w30 fa fa-suitcase"></i>Tours</a>
+                    <ul id="Tours" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/tours">Tours</a></li>
+                        <li><a href="https://www.phptravels.net/admin/tours/add">Add New</a></li>
+                        <li><a href="https://www.phptravels.net/admin/tours/extras">Extras</a></li>
+                        <li><a href="https://www.phptravels.net/admin/tours/reviews">Reviews</a></li>
+                        <li><a href="https://www.phptravels.net/admin/tours/settings">Settings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Cars" data-toggle="collapse" aria-expanded="false"><i class="w30 fa fa-car"></i>Cars</a>
+                    <ul id="Cars" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/cars">Cars</a></li>
+                        <li><a href="https://www.phptravels.net/admin/cars/extras">Extras</a></li>
+                        <li><a href="https://www.phptravels.net/admin/cars/settings">Cars Settings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Blog" data-toggle="collapse" aria-expanded="false"><i class="w30 glyphicon glyphicon-th-large"></i>Blog</a>
+                    <ul id="Blog" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/blog">Posts</a></li>
+                        <li><a href="https://www.phptravels.net/admin/blog/category">Blog Categories</a></li>
+                        <li><a href="https://www.phptravels.net/admin/blog/settings">Blog Settings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Locations" data-toggle="collapse" aria-expanded="false"><i class="w30 fa fa-map-marker"></i>Locations</a>
+                    <ul id="Locations" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/supplier/locations">Locations List</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a data-toggle="collapse" aria-expanded="false" href="#SPECIAL_OFFERS"><i class="fa fa-gift w30"></i> Offers<i class="fa fa-angle-right pull-right menu-icon"></i></a>
+                    <ul id="SPECIAL_OFFERS" class="collapse wow fadeIn animated list-unstyled">
+                        <li><a href="https://www.phptravels.net/admin/offers/">Manage Offers</a></li>
+                        <li><a href="https://www.phptravels.net/admin/offers/settings/">Offers Settings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://www.phptravels.net/admin/coupons/"><i class="fa fa-asterisk"></i> Coupons</a>
+                </li>
+                <li><a href="https://www.phptravels.net/admin/newsletter/"><i class="fa fa-envelope"></i> Newsletter <span class="pull-right label label-danger" id=""></span></a>
+                </li>
+                <li><a href="https://www.phptravels.net/admin/bookings/"><i class="fa fa-list w30"></i> Bookings<span class="pull-right label label-danger" id=""></span></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="list-unstyled CTAs">
+            <li><a style="position:fixed;bottom:30px;width:210px;" target="_blank" href="https://phptravels.com/documentation/" class="article"><i style="margin-top:0px" class="fa fa-chevron-left"></i> Documentation</a></li>
+        </ul>    </nav>
+    <div id="content">
+        <nav class="navbar navbar-default navbar-fixed-top" style="background:#ffffff">
+            <div class="container-fluid" style="padding-left: 265px;">
+                <div id="">
+                    <a id="sidebarCollapse" class="hideSidebar navbar-brand" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                </div>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="nav navbar-nav" style="padding:11px">
+                        <a href="https://www.phptravels.net/" target="_blank"><button class="btn btn-success"><i class="fa fa-laptop"></i> Website</button></a>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <div class="btn btn-danger btn-sm"
+                                     style="margin-top: -10px; height: 30px; margin-bottom: -14px; border-radius: 0px;">
+                                    <i class="fa fa-bell"></i>                                    Alerts
+                                </div>
+                            </a>
+                        </li>-->
+                        <li id="account" class=""><a href="https://www.phptravels.net/admin/profile"><i class="fa fa-user-circle-o"></i> Account</a></li>
+                        <li id="logout" class="active"><a href="https://www.phptravels.net/admin/logout"><strong><i class="fa fa-sign-out"></i> Logout</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div style="margin-top:70px"></div>
+
+        <script>
+            function pending_accounts() {
+                $('li.pending_accounts').hide();
+            }
+            $(document).ready(function () {
+                $("#sidebarCollapse").on("click", function () {
+                    $("#sidebar").toggleClass("active");
+                    $(".container-fluid").toggleClass("go_left");
+                    $("#content").toggleClass("p15");
+                    $(this).toggleClass("active");
+                });
+            });
+
+        </script>
+
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip() })
+        </script><style>
+        .delete_button {right: 0px; top: 44px;}
+        @media screen{body div,p,b,ul,li{margin:0;padding:0;border:0;outline:0;font-weight:normal;font-size:100%;letter-spacing:0;vertical-align:baseline;background:transparent}
+            ul{list-style:none}
+            b{font-weight:bold}
+            .serverHeader a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;color:inherit;text-decoration:none;line-height:1;margin:0}
+            .serverHeader a:hover,a:active{outline:0}
+            .serverHeader a{outline:0}
+            .bar{background:#3c4249;border-radius:10px;display:inline-block;height:5px;width:100%;overflow:hidden}
+            .bar__inner{background:#0e69d5;display:inline-block;border-radius:10px;height:5px;width:50%}
+            .serverHeader{overflow: hidden;background:#3c4249;padding:15px;display:-webkit-box;display:-ms-flexbox;display:flex;color:#fff;position:relative}
+            .serverHeader__stripe{right:-40px;margin-top:0px;background:#636363;font-size:10px;font-weight:600;text-transform:uppercase;text-align:center;width:130px;padding:4px 0;-webkit-transform:rotate(45deg);transform:rotate(45deg);position:absolute}
+            .serverHeader__info{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;padding:8px}
+            .serverHeader__stats{background-color:#2b2e32;width:180px;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;padding:15px;border-radius:4px}
+            .serverHeader__stats a:hover{text-decoration:underline}
+            .serverHeader__usage{background:green;width:320px;padding:15px;margin-left:10px;background-color:#2b2e32;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;border-radius:4px}
+            .serverHeader__title{font-size:18px;font-weight:700;margin-bottom:10px}
+            .serverHeader__list{line-height:1.5;font-size:12px}
+            .serverHeader__list--ok{color:#76c83b}
+            .serverHeader__statsList{line-height:1.8;font-size:12px}
+            .serverHeader__statsList li{padding-left:2px;font-weight:300}
+            .serverHeader__stat-held{background:url(https://www.phptravels.net/assets/img/dash/1.svg) no-repeat 0 4px/13px;padding-left:22px}
+            .serverHeader__stat-queue{background:url(https://www.phptravels.net/assets/img/dash/2.svg) no-repeat 0 4px/13px}
+            .serverHeader__stat-size{background:url(https://www.phptravels.net/assets/img/dash/3.svg) no-repeat 0 4px/13px}
+            .serverHeader__stat-bounces{background:url(https://www.phptravels.net/assets/img/dash/4.svg) no-repeat 0 4px/13px}
+            .serverHeader__usageTitle{color:#566576;font-size:12px;font-weight:600;margin-bottom:5px}
+            .serverHeader__usageLine{display:-webkit-box;display:-ms-flexbox;display:flex;font-size:12px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+            .serverHeader__usageLine+.serverHeader__usageLine{margin-top:6px}
+            .serverHeader__usageLineLabel{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto}
+            .serverHeader__usageLineBar{width:100px;line-height:0}
+            .serverHeader__usageLineValue{width:60px;text-align:right;font-weight:600}
+            .serverHeader__usageLineValueLarge{width:300px;text-align:right;color:#909db0}
+            .serverHeader__usageLineValueLarge b{color:#fff}
+            .serverHeader button .h5{ font-size: 10px;margin: 0px;}
+            .serverHeader button { padding: 15px 0px}
+            .serverHeader .pad{ padding-left: 5px; padding-right: 5px; }
+        }
+        .delete_button {right: 0px;top: 9px !important;}
+    </style>
+
+
+        <div class="serverHeader">
+            <div class="serverHeader__stripe serverHeader__stripe--live" style="background-color: limegreen;">Live</div>
+            <div class="serverHeader__info">
+                <p class="serverHeader__title">DASHBOARD</p>
+                <ul class="serverHeader__list">
+                    <li class="serverHeader__list--ok">Please make sure you have submitted your sitemap</li>
+                    <li><a style="color:#ffffff" target="_blank" href="https://phptravels.com/documentation/sitemap/">To undersstand how to do that click <strong>HERE.</strong></a></li>
+                </ul>
+                <div style="max-width:680px">
+                    <div style="margin-left: -5px; margin-right: -5px; margin-top: 10px; margin-bottom: -8px;display: table; width: 100%;">
+                        <!-- BEGIN ICON BUTTONS SET-->
+                        <div class="col-xs-6 col-sm-6 col-md-2 pad">
+                            <button data-toggle="modal" data-target="#quickbook" class="btn btn-danger btn-block">
+                                <div class="h5"><i class="fa fa-dashboard fa-lg"></i> Quick Book</div>
+                            </button>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 pad">
+                            <form action="https://www.phptravels.net/admin/bookings/" method="post">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <div class="h5"><i class="fa fa-bar-chart-o fa-lg"></i> Bookings</div>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 pad">
+                            <form action="https://www.phptravels.net/admin/cms/" method="post">
+                                <button type="submit" class="btn btn-info btn-block">
+                                    <div class="h5"><i class="fa fa-list-alt fa-lg"></i> &nbsp; CMS Pages</div>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 pad">
+                            <form action="https://www.phptravels.net/admin/blog/" method="post">
+                                <button type="submit" class="btn btn-success btn-block">
+                                    <div class="h5"><i class="glyphicon glyphicon-th-large fa-lg"></i> Blog</div>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 pad">
+                            <form action="https://www.phptravels.net/admin/newsletter/" method="post">
+                                <button type="submit" role="button" class="btn btn-warning btn-block">
+                                    <div class="h5"><i class="fa fa-envelope fa-lg"></i> Newsletter</div>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 pad">
+                            <form action="https://www.phptravels.net/admin/backup/" method="post">
+                                <button type="submit" role="button" class="btn btn-default btn-block">
+                                    <div class="h5"><i class="fa fa-inbox fa-lg"></i> Backup</div>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- END ICON BUTTONS SET-->
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="serverHeader__stats">
+              <ul class="serverHeader__statsList">
+                <li class="serverHeader__stat-held">
+                  <a class="js-held-count" href="#">0 messages held</a>
+                </li>
+                <li class="serverHeader__stat-queue">
+                  <a class="js-queue-size" href="#">0 queued messages</a>
+                </li>
+                <li class="serverHeader__stat-bounces">
+                  <a class="js-bounce-rate" href="#">0.0% bounce rate</a>
+                </li>
+                <li class="serverHeader__stat-size">
+                  <a class="js-disk-size" href="#">0 Bytes used</a>
+                </li>
+              </ul>
+            </div>-->
+
+            <div class="serverHeader__stats">
+                <ul class="serverHeader__statsList">
+                    <li><a class="" href="https://www.phptravels.net/admin/accounts/admins/"><i class="fa fa-user"></i> Total Admins <b>0</b></a></li>
+                    <li><a class="" href="https://www.phptravels.net/admin/accounts/suppliers/"><i class="fa fa-user"></i> Total Suppliers <b>1</b></a></li>
+                    <li><a class="" href="https://www.phptravels.net/admin/accounts/customers/"><i class="fa fa-users"></i> Total Customers <b>4</b></a></li>
+                    <li><a class="" href="https://www.phptravels.net/admin/accounts/guest/"><i class="fa fa-users"></i> Total Guests <b>2</b></a></li>
+                    <li><a class="" href="https://www.phptravels.net/admin/bookings/"><i class="fa fa-tag"></i> Total Bookings <b>7</b></a></li>
+                </ul>
+            </div>
+
+            <style>
+                .serverHeader__usage img {padding:5px;border-radius:10px}
+                .serverHeader__usage img:hover {opacity:0.8}
+            </style>
+            <div class="serverHeader__usage">
+                <p class="serverHeader__usageTitle" style="margin-bottom: 0px; margin-top: -12px;">Marketing Tools and Widgets</p>
+                <a href="https://accounts.google.com" target="_blank" class="col-md-4"><img src="https://www.phptravels.net/assets/img/tools/adwords.jpg" target="_blank" alt="adwords" class="img-responsive img-rounded"/></a>
+                <a href="https://analytics.google.com/" target="_blank" class="col-md-4"><img src="https://www.phptravels.net/assets/img/tools/analytics.jpg" target="_blank" alt="analytics" class="img-responsive img-rounded"/></a>
+                <a href="https://developers.google.com/speed/pagespeed/insights/?url=https://www.phptravels.net/" target="_blank" class="col-md-4"><img src="https://www.phptravels.net/assets/img/tools/googlepagespeed.jpg" alt="googlepagespeed" class="img-responsive img-rounded"/></a>
+                <a href="https://lc.chat/9DXgj" target="_blank" class="col-md-4"><img src="https://www.phptravels.net/assets/img/tools/livechatinc.jpg" target="_blank" alt="livechatinc" class="img-responsive img-rounded"/></a>
+                <a href="https://www.sendinblue.com/" target="_blank" class="col-md-4"><img src="https://www.phptravels.net/assets/img/tools/sendinblue.jpg" target="_blank" alt="sendinblue" class="img-responsive img-rounded"/></a>
+                <a href="https://www.inmotionhosting.com/" target="_blank" class="col-md-4"><img src="https://www.phptravels.net/assets/img/tools/inmotionhosting.jpg" target="_blank" alt="inmotionhosting" class="img-responsive img-rounded"/></a>
+                <!--<div class="serverHeader__usageLine">
+                  <div class="serverHeader__usageLineLabel">Calls</div>
+                  <div class="serverHeader__usageLineBar">
+                    <div class="bar">
+                      <div class="bar__inner js-outgoing-bar" style="width:25%;"></div>
+                    </div>
+                  </div>
+                  <div class="serverHeader__usageLineValue js-outgoing-count" title="">
+                    640
+                  </div>
+                </div>
+                <div class="serverHeader__usageLine">
+                  <div class="serverHeader__usageLineLabel">Bandwidth / Traffic</div>
+                   <div class="serverHeader__usageLineBar">
+                    <div class="bar">
+                      <div class="bar__inner js-outgoing-bar" style="width:60%;"></div>
+                    </div>
+                  </div>
+                  <div class="serverHeader__usageLineValue js-incoming-count">
+                    7440
+                  </div>
+                </div>
+                <div class="serverHeader__usageLine">
+                  <div class="serverHeader__usageLineLabel">Todays Visits</div>
+                  <div class="serverHeader__usageLineValueLarge">
+                    <b class="js-message-rate">34</b> Last 24/H
+                  </div>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- Reports section -->
+        <div class="panel panel-default">
+            <div class="panel-heading">Booking Summary </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="pad8 rev-bg">
+                                <div class="col-md-5 row col-sm-5">
+                                    <div class="tempStatBox" style="margin-left:-10px;" >
+                                        <div class="tempStat" style="border-color: rgb(0, 204, 51);">2</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="text-left">
+                                        <h4><strong>Today's Booking</strong></h4>
+                                        <p>Yesterday's : 2</p>
+                                        <hr class="mtb04">
+                                        <span class="text-success"><strong>Paid :</strong> 0</span>
+                                        <div class="clearfix"></div>
+                                        <span class="text-danger"><strong>Unpaid :</strong> 138.6</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="pad8 rev-bg">
+                                <div class="col-md-5 row col-sm-5">
+                                    <div class="tempStatBox" style="margin-left:-10px;" >
+                                        <div class="tempStat" style="border-color: rgb(255, 153, 51);">3</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="text-left">
+                                        <h4><strong>Last 30 Day's</strong></h4>
+                                        <p>Last 60 Day's : 3</p>
+                                        <hr class="mtb04">
+                                        <span class="text-success"><strong>Paid :</strong> 0</span>
+                                        <div class="clearfix"></div>
+                                        <span class="text-danger"><strong>Unpaid :</strong> 138.6</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block hidden-md hiddin-sm hidden-xs">
+                            <div class="pad8 rev-bg">
+                                <div class="col-md-5 row col-sm-5">
+                                    <div class="tempStatBox" style="margin-left:-10px;" >
+                                        <div class="tempStat" style="border-color: rgb(204, 0, 51);">3</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="text-left">
+                                        <h4><strong>Last 90 Day's</strong></h4>
+                                        <p>Last 180 Day's : 4</p>
+                                        <hr class="mtb04">
+                                        <span class="text-success"><strong>Paid :</strong> 0</span>
+                                        <div class="clearfix"></div>
+                                        <span class="text-danger"><strong>Unpaid :</strong> 138.6</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Revenue Chart</div>
+                    <div class="panel-body">
+                        <style>
+                            td span {width: 100%;font-weight: bold;}
+                            .rev-but { padding: 8px 16px; background-color:#f7f7f7; }
+                            .rev-bg { border: 1px solid #eee;background-color:#f9f9f9;border-radius:5px }
+                            .pad8 { padding: 8px; }
+                            .pad8 h4 { margin-bottom: 5px; }
+                            .pad8 p { color: #8e8e8e }
+                            .mlr0 { padding-right: 0px; padding-left: 0px; }
+                            .mtb10 { margin-top: 15px;margin-bottom: 15px; }
+                            .mtb04 { margin-top: 0px;margin-bottom: 5px; }
+                            .mb0 { margin-bottom: 0px; }
+                            .tempStatBox { width: 120px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; margin: 0 auto; }
+                            .tempStatBox .tempStat { position: relative; font-size: 27px; line-height: 80px; -webkit-border-radius: 50em; -moz-border-radius: 50em; border-radius: 50em; border: 10px solid #FFF; background: #f9f9f9; height: 80px; width: 80px; text-align: center; margin: 0 auto; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+                            .tempStatBox .tempStat:before { content: ""; top: -10px; left: -10px; height: 100px; width: 100px; position: absolute; -webkit-border-radius: 50em; -moz-border-radius: 50em; border-radius: 50em; background: transparent; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3),0px 1px 0 #fff; -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3),0px 1px 0 #fff; box-shadow: inset 0 1px 1px rgba(0,0,0,0.3),0px 1px 0 #fff; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+                        </style>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="container" style="min-width: 310px; height: 335px; margin: 0 auto"></div>
+                            </div>
+                            <!-- Line Chart JS -->
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#container').highcharts({
+                                        title: {
+                                            text: 'Last 30 Days Bookings Report',
+                                            x: -20 //center
+                                        },
+                                        xAxis: {
+                                            categories: ["19","20","21","22","23","24","25","26","27","28","29","30","31","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17"]                    },
+                                        yAxis: {
+                                            title: {
+                                                text: 'Booking Amount'
+                                            },
+                                            min: 0,
+                                            plotLines: [{value: 0, width: 1, color: '#808080'}]
+                                        },
+                                        tooltip: {
+                                            valueSuffix: ' USD'
+                                        },
+                                        legend: {
+                                            layout: 'vertical',
+                                            align: 'right',
+                                            verticalAlign: 'middle',
+                                            borderWidth: 0
+                                        },
+                                        series: [{"name":"Tours","data":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},{"name":"Cars","data":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thflights","data":[0,0,0,0,0,0,0,0,1383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thhotels","data":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]                });
+                                });
+                            </script>
+                            <!-- End Line Chart JS -->
+                            <div class="col-md-4">
+                                <div class="block">
+                                    <div class="panel panel-default mb0">
+                                        <div class="pad8">
+                                            <button class="btn btn-default btn-block rev-but">
+                                                Today
+                                            </button>
+                                            <div class="pad8 text-center">
+                                                <h4><strong>USD 0</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="block">
+                                    <div class="panel panel-default mb0">
+                                        <div class="pad8">
+                                            <button class="btn btn-default btn-block rev-but">
+                                                Last 30 Days
+                                            </button>
+                                            <div class="pad8 text-center">
+                                                <h4><strong>USD 0</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="block">
+                                    <div class="panel panel-default mb0">
+                                        <div class="pad8">
+                                            <button class="btn btn-default btn-block rev-but">
+                                                Last 90 Days
+                                            </button>
+                                            <div class="pad8 text-center">
+                                                <h4><strong>USD 0</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+
+        <!-- Reports section -->
+
+
+        <!-- Recent Bookings -->
+        <style>
+            td span {width: 100%;font-weight: bold;}
+        </style>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Recent Bookings</div>
+            <div class="panel-body">
+                <link href="https://www.phptravels.net/assets/xcrud/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" /><link href="https://www.phptravels.net/assets/xcrud/plugins/jcrop/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" /><link href="https://www.phptravels.net/assets/xcrud/plugins/timepicker/jquery-ui-timepicker-addon.css" rel="stylesheet" type="text/css" /><link href="https://www.phptravels.net/assets/xcrud/themes/bootstrap/xcrud.css" rel="stylesheet" type="text/css" /><div class="xcrud">
+                <div class="xcrud-container">
+                    <div class="xcrud-ajax">
+                        <input type="hidden" class="xcrud-data" name="key" value="78a109be65aa30b7ef8ac347d06793150d706689" /><input type="hidden" class="xcrud-data" name="orderby" value="pt_bookings.booking_id" /><input type="hidden" class="xcrud-data" name="order" value="desc" /><input type="hidden" class="xcrud-data" name="start" value="0" /><input type="hidden" class="xcrud-data" name="limit" value="10" /><input type="hidden" class="xcrud-data" name="instance" value="b221d3870a24c53ca250e945c668e68976494a7e" /><input type="hidden" class="xcrud-data" name="task" value="list" />
+                        <div class="xcrud-top-actions">
+                            <div class="btn-group pull-right">
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <a href="javascript: multiDelfunc('https://www.phptravels.net/admin/bookings/delMultipleBookings', 'checkboxcls')" class="delete_button btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i> Delete Selected</a>
+                        </div>
+
+                        <div class="xcrud-list-container">
+                            <table class="xcrud-list table table-striped table-hover">
+                                <thead>
+                                <tr class="xcrud-th"><th><input class=all type='checkbox' value='' id=select_all > </th><th class="xcrud-num">&#35;</th><th data-order="asc" data-orderby="pt_bookings.booking_id" class="xcrud-column xcrud-action xcrud-current xcrud-desc">&darr; ID</th><th data-order="desc" data-orderby="pt_bookings.booking_ref_no" class="xcrud-column xcrud-action">Ref No.</th><th data-order="desc" data-orderby="pt_accounts.ai_first_name" class="xcrud-column xcrud-action">Customer</th><th data-order="desc" data-orderby="pt_bookings.booking_type" class="xcrud-column xcrud-action">Module</th><th data-order="desc" data-orderby="pt_bookings.booking_date" class="xcrud-column xcrud-action">Date</th><th data-order="desc" data-orderby="pt_bookings.booking_total" class="xcrud-column xcrud-action">Total</th><th data-order="desc" data-orderby="pt_bookings.booking_amount_paid" class="xcrud-column xcrud-action">Paid</th><th data-order="desc" data-orderby="pt_bookings.booking_remaining" class="xcrud-column xcrud-action">Remaining</th><th data-order="desc" data-orderby="pt_bookings.booking_status" class="xcrud-column xcrud-action">Status</th><th class="xcrud-actions">&nbsp;</th></tr>        </thead>
+                                <tbody>
+                                <tr class="xcrud-row xcrud-row-0"><td><input class=checkboxcls type='checkbox' value=9></td><td class="xcrud-current xcrud-num">1</td><td class="xcrud-current">9</td><td>1986</td><td>Asif</td><td>tours</td><td>18/08/2019</td><td>1386</td><td>0</td><td>1386</td><td><span class="btn btn-xs btn-info">Unpaid</span></td><td class="xcrud-current xcrud-actions xcrud-fix"><span class="btn-group"><a class="btn btn-default btn-xcrud btn btn-primary" href="https://www.phptravels.net/invoice/?id=9&sessid=1986" title="View Invoice" target="_blank"><i class="fa fa-search-plus"></i></a><a class="btn btn-default btn-xcrud btn btn-warning" href="https://www.phptravels.net/admin/bookings/edit/tours/9" title="Edit" target="_self"><i class="fa fa-edit"></i></a><a class="btn btn-default btn-xcrud btn-danger" href="javascript: delfunc('9','https://www.phptravels.net/admin/bookings/delBooking')" title="DELETE" target="_self" id="9"><i class="fa fa-times"></i></a></span></td></tr><tr class="xcrud-row xcrud-row-1"><td><input class=checkboxcls type='checkbox' value=8></td><td class="xcrud-current xcrud-num">2</td><td class="xcrud-current">8</td><td>8412</td><td>Asif</td><td>tours</td><td>18/08/2019</td><td>1386</td><td>0</td><td>1386</td><td><span class="btn btn-xs btn-warning">Reserved</span></td><td class="xcrud-current xcrud-actions xcrud-fix"><span class="btn-group"><a class="btn btn-default btn-xcrud btn btn-primary" href="https://www.phptravels.net/invoice/?id=8&sessid=8412" title="View Invoice" target="_blank"><i class="fa fa-search-plus"></i></a><a class="btn btn-default btn-xcrud btn btn-warning" href="https://www.phptravels.net/admin/bookings/edit/tours/8" title="Edit" target="_self"><i class="fa fa-edit"></i></a><a class="btn btn-default btn-xcrud btn-danger" href="javascript: delfunc('8','https://www.phptravels.net/admin/bookings/delBooking')" title="DELETE" target="_self" id="8"><i class="fa fa-times"></i></a></span></td></tr><tr class="xcrud-row xcrud-row-0"><td><input class=checkboxcls type='checkbox' value=7></td><td class="xcrud-current xcrud-num">3</td><td class="xcrud-current">7</td><td>9723</td><td>Demo</td><td>cars</td><td>27/07/2019</td><td>5352.8</td><td>0</td><td>5352.8</td><td><span class="btn btn-xs btn-warning">Reserved</span></td><td class="xcrud-current xcrud-actions xcrud-fix"><span class="btn-group"><a class="btn btn-default btn-xcrud btn btn-primary" href="https://www.phptravels.net/invoice/?id=7&sessid=9723" title="View Invoice" target="_blank"><i class="fa fa-search-plus"></i></a><a class="btn btn-default btn-xcrud btn btn-warning" href="https://www.phptravels.net/admin/bookings/edit/cars/7" title="Edit" target="_self"><i class="fa fa-edit"></i></a><a class="btn btn-default btn-xcrud btn-danger" href="javascript: delfunc('7','https://www.phptravels.net/admin/bookings/delBooking')" title="DELETE" target="_self" id="7"><i class="fa fa-times"></i></a></span></td></tr><tr class="xcrud-row xcrud-row-1"><td><input class=checkboxcls type='checkbox' value=6></td><td class="xcrud-current xcrud-num">4</td><td class="xcrud-current">6</td><td>5013</td><td>Demo</td><td>hotels</td><td>07/03/2019</td><td>2288</td><td>0</td><td>2288</td><td><span class="btn btn-xs btn-info">Unpaid</span></td><td class="xcrud-current xcrud-actions xcrud-fix"><span class="btn-group"><a class="btn btn-default btn-xcrud btn btn-primary" href="https://www.phptravels.net/invoice/?id=6&sessid=5013" title="View Invoice" target="_blank"><i class="fa fa-search-plus"></i></a><a class="btn btn-default btn-xcrud btn btn-warning" href="https://www.phptravels.net/admin/bookings/edit/hotels/6" title="Edit" target="_self"><i class="fa fa-edit"></i></a><a class="btn btn-default btn-xcrud btn-danger" href="javascript: delfunc('6','https://www.phptravels.net/admin/bookings/delBooking')" title="DELETE" target="_self" id="6"><i class="fa fa-times"></i></a></span></td></tr>        </tbody>
+                                <tfoot>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="xcrud-nav">
+                            <div class="btn-group xcrud-limit-buttons" data-toggle="buttons-radio"><button type="button" class="btn btn-default active xcrud-action" data-limit="10">10</button><button type="button" class="btn btn-default xcrud-action" data-limit="25">25</button><button type="button" class="btn btn-default xcrud-action" data-limit="50">50</button><button type="button" class="btn btn-default xcrud-action" data-limit="100">100</button><button type="button" class="btn btn-default xcrud-action" data-limit="all">All</button></div>        <a class="xcrud-search-toggle btn btn-default" href="javascript:;">Search</a><span class="xcrud-search form-inline" style="display:none;"><input class="xcrud-searchdata xcrud-search-active input-small form-control" name="phrase" data-type="text" style="" data-fieldtype="default" type="text" value="" /><select class="xcrud-data xcrud-columns-select input-small form-control" name="column"><option value="">All fields</option><option value="pt_bookings.booking_id" data-type="int">ID</option><option value="pt_bookings.booking_ref_no" data-type="text">Ref No.</option><option value="pt_accounts.ai_first_name" data-type="text">Customer</option><option value="pt_bookings.booking_type" data-type="text">Module</option><option value="pt_bookings.booking_status" data-type="text">Status</option></select><span class="btn-group"><a class="xcrud-action btn btn-primary" href="javascript:;" data-search="1">Go</a></span></span>    <span class="xcrud-benchmark"><span>Execution time: 0.006 s</span><span>Memory usage: 0.24 MB</span></span></div>        </div>
+                    <div class="xcrud-overlay"></div>
+                </div>
+            </div><script src="https://www.phptravels.net/assets/xcrud/plugins/jquery-ui/jquery-ui.min.js"></script><script src="https://www.phptravels.net/assets/xcrud/plugins/jcrop/jquery.Jcrop.min.js"></script><script src="https://www.phptravels.net/assets/xcrud/plugins/timepicker/jquery-ui-timepicker-addon.js"></script><script src="https://www.phptravels.net/assets/xcrud/plugins/xcrud.js"></script>
+                <script type="text/javascript">
+                    <!--
+
+                    var xcrud_config = {"url":"https:\/\/www.phptravels.net\/xcrud_ajax","editor_url":false,"editor_init_url":false,"force_editor":false,"date_first_day":1,"date_format":"dd.mm.yy","time_format":"HH:mm:ss","lang":{"add":"Add","edit":"Edit","view":"View","remove":"Remove","duplicate":"Duplicate","print":"Print","export_csv":"Export into CSV","search":"Search","go":"Go","reset":"Reset","save":"Save","save_return":"Save & Return","save_new":"Save & New","save_edit":"Save & Edit","return":"Return","modal_dismiss":"Close","add_image":"Add image","add_file":"Add file","exec_time":"Execution time:","memory_usage":"Memory usage:","bool_on":"Yes","bool_off":"No","no_file":"no file","no_image":"no image","null_option":"- none -","total_entries":"Total entries:","table_empty":"Entries not found.","all":"All","deleting_confirm":"Do you really want remove this entry?","undefined_error":"It looks like something went wrong...","validation_error":"Some fields are likely to contain errors. Fix errors and try again.","image_type_error":"This image type is not supported.","unique_error":"Some fields are not unique.","your_position":"Your position","search_here":"Search here...","all_fields":"All fields","choose_range":"- choose range -","next_year":"Next year","next_month":"Next month","today":"Today","this_week_today":"This week up to today","this_week_full":"This full week","last_week":"Last week","last_2weeks":"Last two weeks","this_month":"This month","last_month":"Last month","last_3months":"Last 3 months","last_6months":"Last 6 months","this_year":"This year","last_year":"Last year"},"rtl":0};
+
+                    -->
+                </script>   </div>
+        </div><!--Recent Bookings -->
+
+        <!-- Expedia Recent Bookings -->
+
+
+
+        <!--Expedia Recent Bookings -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="pull-left"> <span class="fa fa-bar-chart-o"></span> Visit Statistics of August</div>
+                        <div class="pull-right btn btn-xs btn-danger resetChart"> <span class="fa fa-bar-chart-o"></span> Reset Chart </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="panel-body">
+                        <br>
+                        <!-- <canvas id="canvasbar" height="237" width="750"></canvas>-->
+                        <div id="resgraph" style="min-width: 310px; height: 250px; margin: 0 auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".resetChart").on("click",function() {
+                    $.alert.open('confirm', 'Are you sure you want to reset visits data?', function(answer) {
+                        if(answer == 'yes') {
+                            $.post("https://www.phptravels.net/admin/resetVisits",{isAjax: "yes"},function(resp){
+                                location.reload();
+                            });
+                        } else {
+                            return false;
+                        }
+                    });
+                });
+
+                $('#resgraph').highcharts({
+                    chart: {
+                        type: 'column',
+                        zoomType: 'x'
+                    },
+                    title: {
+                        text: ''
+                    },
+                    xAxis: {
+                        title: {
+                            text: "August"
+                        },
+                        categories: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,]
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Visits'
+                        },
+                        stackLabels: {
+                            enabled: true,
+                            style: {
+                                fontWeight: 'bold',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                            }
+                        }
+                    },
+                    legend: {
+                        align: 'right',
+                        x: -70,
+                        verticalAlign: 'top',
+                        y: 20,
+                        floating: true,
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        borderWidth: 1,
+                        shadow: false
+                    },
+                    tooltip: {
+                        formatter: function () {
+                            return '<b>' + this.x + '</b><br/>' +
+                                this.series.name + ': ' + this.y + '<br/>' +
+                                'Total: ' + this.point.stackTotal;
+                        }
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'normal',
+                            dataLabels: {
+                                enabled: false,
+                                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                style: {
+                                    textShadow: '0 0 3px black, 0 0 3px black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Unique',
+                        data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17],
+                        stack: 'male'
+                    }, {
+                        name: 'Total Hits',
+                        data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107],
+                        stack: 'female'
+                    }]
+                });
+            });
+        </script>
+
+        <!---quick booking modal-->
+        <div class="modal fade" id="quickbook" tabindex="-1" role="dialog" aria-labelledby="ADD_BLOG_CAT" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form action="https://www.phptravels.net/admin/quickbooking/" method="GET">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Quick Booking</h4>
+                        </div>
+                        <div class="modal-body form-horizontal">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" >Apply Tax</label>
+                                <div class="col-md-4">
+                                    <select name="applytax" class="form-control" id="apply" >
+                                        <option value="yes" >Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" id="service" >Service</label>
+                                <div class="col-md-4">
+                                    <select required name="service" data-placeholder="Select" class="form-control" id="servicetype" tabindex="1">
+                                        <option value="">Select</option>
+                                        <option value="Tours">Tours</option>
+                                        <option value="Cars">Cars</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end modal -->
+    </div>
+</div>
+</div>
+
+<script src="https://www.phptravels.net/assets/js/sidebar.js"></script>
+
+<!-- icheck -->
+<script src="https://www.phptravels.net/assets/include/icheck/icheck.min.js"></script>
+<link href="https://www.phptravels.net/assets/include/icheck/square/grey.css" rel="stylesheet">
+<script>
+    var cb, optionSet1;
+
+    $(function () {
+        var checkAll = $('input.all');
+        var checkboxes = $('input.checkboxcls');
+
+        $('input').iCheck({
+            checkboxClass: "icheckbox_square-grey",
+        });
+
+        checkAll.on('ifChecked ifUnchecked', function(event) {
+            if (event.type == 'ifChecked') {
+                checkboxes.iCheck('check');
+            } else {
+                checkboxes.iCheck('uncheck');
+            }
+        });
+
+        checkboxes.on('ifChanged', function(event){
+            if(checkboxes.filter(':checked').length == checkboxes.length) {
+                checkAll.prop('checked', 'checked');
+            } else {
+                checkAll.removeProp('checked');
+            }
+            checkAll.iCheck('update');
+        });
+    });
+
+    $(".radio").iCheck({
+        checkboxClass: "icheckbox_square-grey",
+        radioClass: "iradio_square-grey"
+    });
+</script>
+
+<!-- datepicker -->
+<script src="https://www.phptravels.net/assets/include/datepicker/datepicker.js"></script>
+<link rel="stylesheet" href="https://www.phptravels.net/assets/include/datepicker/datepicker.css" />
+
+
+
+<script>
+    var fmt = "dd/mm/yyyy";
+    if (top.location != location) { top.location.href = document.location.href ; }
+    $(function(){ window.prettyPrint && prettyPrint(); $('.dob').datepicker({format: fmt,autoclose: true}).on('changeDate', function (ev) {
+        $(this).datepicker('hide'); });
+        $('#dp1').datepicker();
+        $('#dp2').datepicker();
+        $('#dp3').datepicker();
+        $('#dp5').datepicker();
+
+
+
+// disabling dates
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+        var date = $('.dpd3').datepicker({
+            format: fmt,
+            onRender: function(date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            }
+        })
+            .on('changeDate', function(ev) {
+                date.hide();
+            })
+            .data('datepicker');
+
+        var date12 = $('.dpd5').datepicker({
+            format: fmt,
+            onRender: function(date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            }
+        })
+            .on('changeDate', function(ev) {
+                date12.hide();
+            })
+            .data('datepicker');
+        var date13 = $('.dpd6').datepicker({
+            format: fmt,
+            onRender: function(date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            }
+        })
+            .on('changeDate', function(ev) {
+                date13.hide();
+            })
+            .data('datepicker');
+
+        var checkin = $('.dpd1').datepicker({
+            format: fmt,
+            onRender: function(date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            }
+        })
+            .on('changeDate', function(ev) {
+                if (ev.date.valueOf() > checkout.date.valueOf()) {
+                    var newDate = new Date(ev.date)
+                    newDate.setDate(newDate.getDate() + 1); checkout.setValue(newDate);
+                }
+                checkin.hide();
+                $('.dpd2')[0].focus();
+            })
+            .data('datepicker');
+        var checkout = $('.dpd2').datepicker({
+            format: fmt,
+            onRender: function(date) {
+                return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+            }
+        })
+            .on('changeDate', function(ev) {
+                checkout.hide();
+            })
+            .data('datepicker');
+
+    });
+</script>
+<!-- timepicker -->
+<script src="https://www.phptravels.net/assets/include/timepicker/timepicker.js"></script>
+<link rel="stylesheet" href="https://www.phptravels.net/assets/include/timepicker/timepicker.css" />
+<script>
+    $(function(){
+        $('.timepicker').clockface(); });
+</script>
+
+<!-- dronzone -->
+<link href="https://www.phptravels.net/assets/include/dropzone/dropzone.css" type="text/css" rel="stylesheet" />
+<script src="https://www.phptravels.net/assets/include/dropzone/dropzone.min.js"></script>
+
+<!----Custom functions file---->
+<script src="https://www.phptravels.net/assets/js/funcs.js"></script>
+<!----Custom functions file---->
+
+<!-- pnotify -->
+<script src="https://www.phptravels.net/assets/include/pnotify/pnotify.custom.min.js"></script>
+<link href="https://www.phptravels.net/assets/include/pnotify/pnotify.custom.css" rel="stylesheet">
+
+
+<script>
+    $(function() {
+        $(document).ready(function() {
+            $('.chosen-select').select2( { width:'100%', maximumSelectionSize: 1 } );
+            $(".chosen-multi-select").select2( { width:'100%', } ); }); }); function slideout(){ setTimeout(function(){
+        $(".alert-success").fadeOut("slow", function () { });
+        $(".alert-danger").fadeOut("slow", function () { }); }, 4000);}
+</script>
+
+<script>
+    window.jQuery.ui || document.write('<script src="https://www.phptravels.net/assets/js/jquery.slimscroll.min.js"><\/script>')
+</script>
+<script src="https://www.phptravels.net/assets/js/wow.min.js"></script>
+<script>
+    /*<![CDATA[*/
+    $(function() {
+        $('.main').panels();
+    });
+    /*]]>*/
+
+    $("#btnSendSms").click(function() {
+        var payload = {
+            recepient: $('[name=recepient]').val(),
+            message: $('[name=message]').val()
+        };
+        $.post('https://www.phptravels.net/admin/templates/sms_test', payload, function(response) {
+            console.log(response);
+            if(response.status == 'success') {
+                $('#testSmsModalBox #alertBox').html('<div class="alert alert-success">'+response.message+'</div>');
+                setTimeout(function() {
+                    $('#testSmsModalBox').modal('hide');
+                }, 1000);
+            } else {
+                $('#testSmsModalBox #alertBox').html('<div class="alert alert-danger">'+response.message+'</div>');
+            }
+        });
+    });
+
+    var currentObjElement;
+    function editModelBtn(elem) {
+        currentObjElement = elem;
+        var templateObj = $(elem).data('content');
+        $('#modelEdit #modalTitle').text(templateObj.name);
+        $('#modelEdit #modalShortCode').text(templateObj.shortcode);
+        $('#modelEdit #modalBody').val(templateObj.body);
+        $('#modelEdit [name="objectId"]').val(templateObj.id);
+
+        $('#modelEdit #alertBox').empty();
+        $('#modelEdit').modal('show');
+    }
+
+    function testModelBtn(elem) {
+        currentObjElement = elem;
+        var templateObj = $(elem).data('content');
+        $('#modelTest #modalTitle').text(templateObj.name);
+        $('#modelTest #modalBody').val(templateObj.body);
+
+        $('#modelTest #alertBox').empty();
+        $('#modelTest').modal('show');
+    }
+
+    $('#modelEdit #btnSave').click(function() {
+        $.post('https://www.phptravels.net/admin/templates/updateSmsTemplate', {
+            id: $('#modelEdit [name="objectId"]').val(),
+            name: $('#modelEdit #modalTitle').text(),
+            shortcode: $('#modelEdit #modalShortCode').text(),
+            body: $('#modelEdit #modalBody').val()
+        }, function(response) {
+            if(response.status == 'success') {
+                $(currentObjElement).data('content', response.updatedObject);
+                $('#modelEdit #alertBox').html('<div class="alert alert-success">Document updated</div>');
+                setTimeout(function() {
+                    $('#modelEdit').modal('hide');
+                }, 1000);
+            } else {
+                $('#modelEdit #alertBox').html('<div class="alert alert-danger">Unable to update document</div>');
+            }
+        });
+    });
+
+    $('#modelTest #btnSend').click(function() {
+        $.post('https://www.phptravels.net/admin/templates/sms_test', {
+            recepient: $('#modelTest [name="recepient"]').val(),
+            message: $('#modelTest #modalBody').val()
+        }, function(response) {
+            if(response.status == 'success') {
+                $('#modelTest #alertBox').html('<div class="alert alert-success">'+response.message+'</div>');
+                setTimeout(function() {
+                    $('#modelTest').modal('hide');
+                }, 1000);
+            } else {
+                $('#modelTest #alertBox').html('<div class="alert alert-danger">'+response.message+'</div>');
+            }
+        });
+    });
+</script>
+
+<!-- URL for livechat
+https://phptravels.com/livechat.php
+-->
+
+</body>
+</html>
